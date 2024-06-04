@@ -1,0 +1,318 @@
+<?php
+session_start();
+$userprofile = $_SESSION['user_name'];
+
+if($userprofile==true)
+{
+
+}
+else{
+  header('location:login.php');
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>VIDEOS</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="welcome.php" class="logo"> <i class="fa-solid fa-pen-nib"></i> EduTech </a>
+
+   <nav class="navbar">
+      
+         <a href="welcome.php">HOME</a>
+         <a href="dev.php">BRANCH</a>
+         <a href="sv.php">VIDEOS</a>
+         <a href="contact.php">CONTACT</a>
+        
+   </nav>
+
+   <div class="icons">
+      <h1><?php echo"".$_SESSION['user_name']?><a href="logout.php">  Logout</div></h1>
+      </a>
+   </div>
+
+</header>
+
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="search">
+   <div class="srch1">
+       <input id="srch" type="search" placeholder="Search" aria-label="Search" onchange="openPage()">
+       <button class="btn btn-outline-success" type="submit">Search</button>
+   </div>
+  </section>
+        
+
+<!-- home section ends -->
+
+<!-- subjects section starts  -->
+
+<section class="vid">
+
+   <h1 class="heading">VIDEOS FOR BEGINNERS</h1>
+
+   <div class="box-containerdev">
+
+      <div class="box">
+         <img src="image/javav.webp">
+         <h3>JAVA</h3>
+         <p>
+            Java is scripting language<br>
+            IF you learning Java as your first language,
+             you can start with this course as 
+             it is for absolute beginners.
+         </p>
+         <a class="butnote" href="https://www.youtube.com/watch?v=ntLJmHOJ0ME&list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q">
+        <button>Click to Start</button>
+       </a>
+      </div>
+
+      <div class="box">
+         <img src="image/bpy.jfif">
+         <h3>PYTHON</h3>
+         <p>Python is very easy to learn,this video help you to undrerstand python very well
+            learn python concepts from basic<br>
+            Course is specifically designed for beginners
+            
+         </p>
+         <a class="butnote" href="https://youtu.be/gfDE2a7MKjA">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+      <div class="box">
+         <img src="image/bdsa.jpeg">
+         <h3>DSA BEGINNER</h3>
+         <p>This DSA Course is specifically designed for beginners whether 
+             it be students or working professionals, who want to learn 
+             Data Structures and Algorithms concepts from basic</p>
+         <a class="butnote" href="https://youtu.be/CBYHwZcbD-s">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+      <div class="box">
+         <img src="image/bjava.jpeg" alt="">
+         <h3>JAVA-SCRIPT</h3>
+         <p>
+            Learn JAVA-SCRIPT from start
+         </p>
+         <a class="butnote" href="https://youtu.be/o1IaduQICO0">
+         <button>Click to Start</button>
+        </a>
+      </div>
+      <div class="box">
+         <img src="image/brjs.jpeg" alt="">
+         <h3>REACT-JS</h3>
+         <p>
+            Learn React-Js from start
+         </p>
+         <a class="butnote" href="https://youtu.be/pp2Jl7xkoeA">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+      <div class="box">
+         <img src="image/bc++.jpeg" alt="">
+         <h3>C++</h3>
+         <p>
+            Learn C++ from start
+         </p>
+         <a class="butnote" href="https://youtu.be/vLnPwxZdW4Y">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+   </div>
+</section>
+
+   <section class="vid">
+
+   <h1 class="heading">ADVANCED VIDEOS</h1>
+   <div class="box-containerdev">
+
+      <div class="box">
+         <img src="image/ajava.png">
+         <h3>JAVA ADVANCED</h3>
+         <p>
+            Java is scripting language<br>
+            this video is only for advanced user
+         </p>
+         <a class="butnote" href="https://youtu.be/Ae-r8hsbPUo">
+        <button>Click to Start</button>
+       </a>
+      </div>
+
+      <div class="box">
+         <img src="image/apy.jpeg" alt="">
+         <h3>PYTHON</h3>
+         <p>
+            Video to Learn Advanced PYTHON
+         </p>
+         <a class="butnote" href="https://youtu.be/Yrtm7d3TJbs">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+      <div class="box">
+         <img src="image/adsa.jpeg" alt="">
+         <h3>DSA Advanced</h3>
+         <p>
+            Video to Learn Advanced DSA
+         </p>
+         <a class="butnote" href="https://youtu.be/8h80p_rYv1Y">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+      <div class="box">
+         <img src="image/ajs.jpeg" alt="">
+         <h3>JAVA-SCRIPT</h3>
+         <p>
+            Video to Learn Advanced JAVA-SCRIPT
+         </p>
+         <a class="butnote" href="https://youtu.be/zZdlIMmenxA">
+         <button>Click to Start</button>
+        </a>
+      </div>
+      <div class="box">
+         <img src="image/arjs.jpeg" alt="">
+         <h3>REACT-JS</h3>
+         <p>
+            Video to Learn Advanced React-Js
+         </p>
+         <a class="butnote" href="https://youtu.be/MfIoAG3e7p4">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+      <div class="box">
+         <img src="image/ac++.jpeg" alt="">
+         <h3>C++ Advanced</h3>
+         <a class="butnote" href="https://youtu.be/2qbvngwQp7g">
+         <button>Click to Start</button>
+        </a>
+      </div>
+
+</section>
+
+<!-- subjects section ends -->
+
+<!-- CHAT BAR BLOCK -->
+<div class="chat-bar-collapsible">
+   <button id="chat-button" type="button" class="collapsible">Chat with us!
+       <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+   </button>
+
+   <div class="content">
+       <div class="full-chat-block">
+           <!-- Message Container -->
+           <div class="outer-container">
+               <div class="chat-container">
+                   <!-- Messages -->
+                   <div id="chatbox">
+                       <h5 id="chat-timestamp"></h5>
+                       <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                   </div>
+
+                   <!-- User input box -->
+                   <div class="chat-bar-input-block">
+                       <div id="userInput">
+                           <input id="textInput" class="input-box" type="text" name="msg"
+                               placeholder="Tap 'Enter' to send a message">
+                           <p></p>
+                       </div>
+
+                       <div class="chat-bar-icons">
+                           <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                               onclick="heartButton()"></i>
+                           <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                               onclick="sendButton()"></i>
+                       </div>
+                   </div>
+
+                   <div id="chat-bar-bottom">
+                       <p></p>
+                   </div>
+
+               </div>
+           </div>
+
+       </div>
+   </div>
+
+</div>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fa-solid fa-pen-nib"></i> EduTech </h3>
+         <p>FOLLOW FOR MORE</p>
+         <div class="share">
+            <a href="https://www.facebook.com/deven.gupta.12" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="https://instagram.com/anamika_zagade_?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="welcome.php" class="link">HOME</a>
+         <a href="dev.php" class="link">BRANCH</a>
+         <a href="sv.php" class="link">STUDY VIDEOS</a>
+         <a href="contact.php" class="link">CONTACT</a>
+      </div>
+
+      <div class="box">
+         <h3>useful links</h3>
+         <a href="contact.php" class="link">ASK QUESTION</a>
+         <a href="contact.php" class="link">SEND FEEDBACK</a>
+      </div>
+
+     
+
+   <div class="credit"> created by <span>MAD</span> | all rights reserved to Edutech </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scripts/responses.js"></script>
+<script src="scripts/chat.js"></script>
+
+
+</body>
+</html>
+
+
+
